@@ -1,0 +1,301 @@
+header {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1380px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 8px;
+  padding: 6px 7px 6px 7px;
+  margin: 5px 5px 5px 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #343434;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  background-color: #15b3f65d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-link:hover i {
+  color: #15B2F6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar-brand img {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar-brand img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.nav-link.redes:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
+footer {
+  list-style: none;
+  width: 100%;
+  background-color: #343434;
+  border-top: 5px solid #35353560;
+}
+
+footer .piePag {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .piePag .piePag__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .piePag a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+footer .piePag ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .piePag ul li {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 10px 0 10px;
+}
+
+footer .piePag .redSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .piePag .redSocial a {
+  margin: 0 10px 0 10px;
+}
+
+footer .piePag p {
+  color: rgba(255, 255, 255, 0.493);
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+@media (max-width: 350px) {
+  header .navbar-brand img {
+    width: 120px;
+  }
+}
+
+footer ul li:hover {
+  color: white;
+  background-color: #15b3f659;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.redSocial a i {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 600px) {
+  footer .piePag .piePag__contenido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  footer .piePag {
+    height: auto;
+    padding: 10px 0 10px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .piePag a {
+    font-size: 15px;
+  }
+  .redSocial a i {
+    margin: 20px;
+  }
+}
+
+.contenedor {
+  background-image: url("/imagenes/edificios.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.contenedor_cotizador {
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+
+.titulo-imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.titulo-imagen h1 {
+  width: 45%;
+  font-family: "Raleway", sans-serif;
+  color: #343434;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+
+.titulo-imagen img {
+  width: 40%;
+}
+
+.calculador {
+  margin: 40px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculador .form {
+  width: 45%;
+}
+
+.calculador .form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calculador .form form input {
+  padding: 12px;
+  outline: none;
+  border: 2px solid #343434;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #343434;
+  color: white;
+}
+
+.calculador .form form input:focus {
+  border: 2px solid #15B2F6;
+}
+
+.calculador .form form .btnS input:hover {
+  background-color: #343434b7;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.calculador .polizas {
+  width: 45%;
+  max-height: 400px;
+  overflow: scroll;
+  background-color: #343434;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.calculador .polizas .poliza {
+  width: 100%;
+  padding-top: 10px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5em;
+}
+/*# sourceMappingURL=style.css.map */

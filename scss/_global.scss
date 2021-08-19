@@ -1,0 +1,143 @@
+$main-color : #15B2F6;
+$text-color: #343434;
+$back-grey : #E5E5E5;
+$main-font: 'Raleway', sans-serif;
+
+header {
+    border-bottom: 1px solid $back-grey;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1380px;
+}
+.navbar-nav .nav-link {
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 8px;
+	padding: 6px 7px 6px 7px;
+    margin: 5px 5px 5px 5px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $text-color;
+}
+.nav-link:hover {
+	text-decoration: none;
+    background-color: #15b3f65d;
+    transition: 0.5s;
+}
+.nav-link:hover i{
+    color: $main-color;
+    transition: 0.5s;
+}
+.navbar-brand img {
+    transition: .2s;
+}
+.navbar-brand img:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+.nav-link.redes:hover {
+    background-color: transparent;
+}
+@media (max-width: 1200px) {
+    .navbar-nav .nav-link{
+        font-size: 14px;
+    }
+}
+footer {
+    list-style: none;
+    width: 100%;
+    background-color: #343434;
+    border-top: 5px solid #35353560;
+    
+    .piePag {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        width: 90%;
+        height: 150px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .piePag__contenido {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        ul {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            margin-bottom: 0;
+            flex-wrap: wrap;
+            li {
+                text-align: center;
+                list-style: none;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 7px;
+                margin: 0 10px 0 10px;
+                
+            }
+        }
+        .redSocial {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a{
+                margin: 0 10px 0 10px
+            }
+        }
+        p {
+            color: rgba(255, 255, 255, 0.493);
+            font-family: 'Nunito', sans-serif;
+            font-size: 15px;
+            justify-content: flex-end;
+            text-align: center;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    }
+    
+}
+@media (max-width: 350px) {
+    header .navbar-brand img{
+        width: 120px;
+    }
+}
+footer ul li:hover {
+    color: white;
+    background-color: #15b3f659;
+    transition: .3s;
+}
+.redSocial a i{
+    flex: 1;
+}
+@media (max-width: 600px) {
+    footer .piePag .piePag__contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 900px) {
+    footer .piePag {
+        height: auto;
+        padding: 10px 0 10px 0;
+        flex-direction: column;
+        a {
+            font-size: 15px;
+        }
+    }
+    .redSocial a i {
+        margin: 20px;
+    }
+}
