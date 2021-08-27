@@ -3,6 +3,7 @@ $text-color: #343434;
 $back-grey : #E5E5E5;
 $main-font: 'Raleway', sans-serif;
 
+
 .contenedor {
     background-image: url("/imagenes/edificios.svg");
     background-size: cover;
@@ -49,10 +50,23 @@ $main-font: 'Raleway', sans-serif;
                 background-color: $text-color;
                 color: white;
             }
-            input:focus {
+            .btnCotizar {
+                padding: 12px;
+                outline: none;
+                border: 2px solid #343434;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                background-color: $text-color;
+                color: white;
+                display: none;
+            }
+            .btnCotizar:focus {
                 border: 2px solid $main-color;
             }
-            .btnS input:hover {
+            .btnCotizar.showCotizar {
+                display: inline-block;
+            }
+            .btnCotizar:hover {
                 background-color: #343434b7;
                 transition: .2s;
             }
@@ -73,6 +87,45 @@ $main-font: 'Raleway', sans-serif;
             color: white;
             font-family: $main-font;
             line-height: 1.5em;
+            font-size: 18px;
+        }
+    }
+}
+
+input:focus {
+    border: 2px solid $main-color;
+}
+.btnS input:hover {
+    background-color: #343434b7;
+    transition: .2s;
+}
+.btnS input {
+    padding: 12px;
+    outline: none;
+    border: 2px solid #343434;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: $text-color;
+    color: white;
+}
+.modal .modal-body {
+    .modal_imagen {
+        width: 40%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .form_polizas {
+    display: flex;
+    flex-direction: column;
+        input  {
+            padding: 12px;
+            outline: none;
+            border: 2px solid #343434;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: $text-color;
+            color: white;
         }
     }
 }

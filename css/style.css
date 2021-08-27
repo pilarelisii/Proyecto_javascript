@@ -270,11 +270,26 @@ footer ul li:hover {
   color: white;
 }
 
-.calculador .form form input:focus {
+.calculador .form form .btnCotizar {
+  padding: 12px;
+  outline: none;
+  border: 2px solid #343434;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #343434;
+  color: white;
+  display: none;
+}
+
+.calculador .form form .btnCotizar:focus {
   border: 2px solid #15B2F6;
 }
 
-.calculador .form form .btnS input:hover {
+.calculador .form form .btnCotizar.showCotizar {
+  display: inline-block;
+}
+
+.calculador .form form .btnCotizar:hover {
   background-color: #343434b7;
   -webkit-transition: .2s;
   transition: .2s;
@@ -297,5 +312,57 @@ footer ul li:hover {
   color: white;
   font-family: "Raleway", sans-serif;
   line-height: 1.5em;
+  font-size: 18px;
+}
+
+input:focus {
+  border: 2px solid #15B2F6;
+}
+
+.btnS input:hover {
+  background-color: #343434b7;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btnS input {
+  padding: 12px;
+  outline: none;
+  border: 2px solid #343434;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #343434;
+  color: white;
+}
+
+.modal .modal-body .modal_imagen {
+  width: 40%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-body .form_polizas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal-body .form_polizas input {
+  padding: 12px;
+  outline: none;
+  border: 2px solid #343434;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #343434;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
