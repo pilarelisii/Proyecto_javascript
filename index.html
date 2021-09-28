@@ -8,18 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Quicksand&family=Raleway:wght@300;400;500;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <title>Proyecto JavaScript</title>
 </head>
 <body>
     
 
-  
+<!--primer formulario-->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Enviar polizas cotizadas a mail</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Registrar datos de vendedor</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -37,15 +37,16 @@
       </div>
     </div>
 </div>
+<!--Confirmar alerta de datos-->
 <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalToggleLabel2">Datos enviados</h5>
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Datos registrados</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="/imagenes/cheque.svg" alt="Enviado" class="modal_imagen">
+          <img src="/imagenes/1_Thumbs up_02.png" alt="Enviado" class="modal_imagen">
         </div>
         <div class="modal-footer btnS">
             <input type="button" id="cargarDatos" class="btn btn-secondary" data-bs-dismiss="modal" value="Listo">
@@ -101,29 +102,107 @@
             <h1>Sección de vendedores de TePuedoAsegurar</h1>
             <img src="/imagenes/undraw_pay_online_b1hk 1.png" alt="">
         </div>
-        <div class="calculador">
-            <div class="form">
+        
+            <div class="selecSeguros">
+                <div class="selec activo" data-selec="auto">
+                    <div class="selec_cir">
+                        <i class="fas fa-car-alt" aria-hidden="true"></i>
+                    </div>
+                    Auto
+                </div>
+                <div class="selec" data-selec="moto">
+                    <div class="selec_cir">
+                        <i class="fas fa-motorcycle" aria-hidden="true"></i>
+                    </div>
+                    Moto
+                </div>
+                <div class="selec" data-selec="vida">
+                    <div class="selec_cir">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    Bicicleta
+                </div>
+            </div>
+
+            <div class="calculador">
+            <!--Formulario auto-->
+            <div class="form activo" id="formAuto" data-selec="auto">
                 <form action="" id="formulario">
                     <input type="number" name="kilometros" id="kilometros" placeholder="Kilometros">
                     <input type="number" name="año" id="año" placeholder="Año">
-                    <input type="text" name="marca" id="marca" placeholder="Marca">
-                    <input type="text" name="patente" id="patente" placeholder="Patente">
+                    <select name="marca" id="marca">
+                    </select>
+                    <select name="modelo" id="modelo">
+                    </select>
+                    <input type="text" name="patente" id="patente" placeholder="Patente" maxlength="7">
                     <input type="number" name="valor" id="valor" placeholder="Suma Asegurada">
                     <div class="btnS">
-                    <input type="button" value="Agregar" id="btnAgregar" >
-                    <input type="button" value="Confirmar" id="btnConfirmar" >
-                    <button type="button" class="btnCotizar" id="btnCotizar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cotizar polizas</button>
+                    <input type="button" value="Agregar" class="btnAgregar" id="btnAgregar_Autos">
+                    <button type="button" class="btnConfirmar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Confirmar</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="form" id="formMoto" data-selec="moto">
+                <form action="" id="formularioMoto">
+                    <input type="number" name="kilometrosMoto" id="kilometrosMoto" placeholder="Kilometros">
+                    <input type="number" name="añoMoto" id="añoMoto" placeholder="Año">
+                    <select name="marcaMoto" id="marcaMoto">
+                    </select>
+                    <select name="modeloMoto" id="modeloMoto">
+                    </select>
+                    <input type="text" name="patenteMoto" id="patenteMoto" placeholder="Patente" maxlength="7">
+                    <input type="number" name="valorMoto" id="valorMoto" placeholder="Suma Asegurada">
+                    <div class="btnS">
+                    <input type="button" value="Agregar" class="btnAgregar" id="btnAgregar_Motos">
+                    <button type="button" class="btnConfirmar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Confirmar</button>
                     </div>
                 </form>
             </div>
             
+            <div class="form" id="formBicicleta" data-selec="vida">
+                <form action="" id="formularioBicicleta">
+                    <select name="marcaBicicleta" id="marcaBicicleta">
+
+                    </select>
+                    <select name="modeloBicicleta" id="modeloBicicleta">
+
+                    </select>
+                    <select name="rodado" id="rodado">
+                        <option value="" disabled selected>Rodado</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                    </select>
+                    <input type="number" name="añoBicicleta" id="añoBicicleta" placeholder="Año de compra">
+                    <select name="sumaAsegurada_bicicleta" id="sumaAsegurada_bicicleta">
+                        <option value="50000">$50.000</option>
+                        <option value="100000">$100.000</option>
+                        <option value="150000">$150.000</option>
+                        <option value="200000">$200.000</option>
+                        <option value="250000">$250.000</option>
+                        <option value="300000">$300.000</option>
+                    </select>
+                    <div class="btnS">
+                    <input type="button" value="Agregar" class="btnAgregar" id="btnAgregar_Bicicleta">
+                    <button type="button" class="btnConfirmar" id="btnConfirmar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Confirmar</button>
+                    </div>
+                </form>
+            </div>
             <div class="polizas">
                 <div id="contVendedor">
-                    <h1 style="font-size: 20px; font-weight: 500;">Vendedor:  </h1>
+                    <h1 style="font-size: 20px; font-weight: 500;">Vendedor:</h1>
 
                 </div>
                 <hr>
-                <p class="poliza" id="poliza"></p>
+                <div class="poliza" id="poliza">
+                </div>
             </div>
         </div>
     </div>     
@@ -151,9 +230,10 @@
         <p>Desarrollado por Pilar Elisii</p>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/6523532a70.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/js/main.js"></script>
+
 </body>
 </html>

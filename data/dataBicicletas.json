@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1",
+        "nombre": "Aurora",
+        "padre_id": "0"
+    },
+    {
+        "id": "2",
+        "nombre": "Colner",
+        "padre_id": "0"
+    },
+    {
+        "id": "3",
+        "nombre": "Vairo",
+        "padre_id": "0"
+    },
+    {
+        "id": "4",
+        "nombre": "Zenith",
+        "padre_id": "0"
+    },
+    {
+        "id": "5",
+        "nombre": "500 ASXD 29",
+        "padre_id": "1"
+    },
+    {
+        "id": "6",
+        "nombre": "600 DSX",
+        "padre_id": "1"
+    },
+    {
+        "id": "7",
+        "nombre": "650 ASXD - 27",
+        "padre_id": "1"
+    },
+    {
+        "id": "8",
+        "nombre": "650 ASXD - 27",
+        "padre_id": "1"
+    },
+    {
+        "id": "9",
+        "nombre": "770 ASXD - 29",
+        "padre_id": "1"
+    },
+    {
+        "id": "10",
+        "nombre": "Calea",
+        "padre_id": "4"
+    },
+    {
+        "id": "11",
+        "nombre": "Riva",
+        "padre_id": "4"
+    },
+    {
+        "id": "12",
+        "nombre": "X",
+        "padre_id": "4"
+    },
+    {
+        "id": "13",
+        "nombre": "ATC",
+        "padre_id": "4"
+    },
+    {
+        "id": "14",
+        "nombre": "Ander",
+        "padre_id": "4"
+    },
+    {
+        "id": "15",
+        "nombre": "Islander VBRAKE",
+        "padre_id": "3"
+    },
+    {
+        "id": "16",
+        "nombre": "XR3.8 HID",
+        "padre_id": "3"
+    },
+    {
+        "id": "17",
+        "nombre": "XR8.5 HID",
+        "padre_id": "3"
+    },
+    {
+        "id": "18",
+        "nombre": "XR8.0 HIS",
+        "padre_id": "3"
+    },
+    {
+        "id": "19",
+        "nombre": "WASABI MEC",
+        "padre_id": "3"
+    },
+    {
+        "id": "20",
+        "nombre": "ATENEA VBRAKE",
+        "padre_id": "2"
+    }
+]
